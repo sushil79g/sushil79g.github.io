@@ -1091,3 +1091,156 @@ Contact section start here
 .education-section .desc {
     color: #24292e;
 }
+
+/* Custom styles */
+@layer base {
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+/* Smooth transitions */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #444;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Project card hover effect */
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skill icons */
+.skill-icon {
+    @apply text-blue-600 dark:text-blue-400;
+}
+
+/* Section spacing */
+section {
+    @apply py-20;
+}
+
+/* Custom button styles */
+.btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300;
+}
+
+.btn-secondary {
+    @apply border border-blue-600 text-blue-600 hover:bg-blue-50 dark:hover:bg-gray-800 px-6 py-3 rounded-lg transition-colors duration-300;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+    h1 {
+        @apply text-4xl;
+    }
+    h2 {
+        @apply text-2xl;
+    }
+}
+
+/* Custom card styles */
+.card {
+    @apply bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg transition-all duration-300;
+}
+
+/* Custom link styles */
+.link {
+    @apply text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300;
+}
+
+/* Custom list styles */
+.list-item {
+    @apply flex items-start space-x-2;
+}
+
+.list-icon {
+    @apply text-blue-600 dark:text-blue-400 mt-1;
+}
+
+/* Custom section titles */
+.section-title {
+    @apply text-3xl font-bold mb-8 text-center;
+}
+
+/* Custom grid layouts */
+.grid-cols-auto {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+/* Custom spacing utilities */
+.space-y-custom {
+    @apply space-y-8;
+}
+
+/* Custom container */
+.container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Custom navigation */
+.nav-link {
+    @apply hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300;
+}
+
+/* Custom footer */
+.footer {
+    @apply py-8 border-t border-gray-200 dark:border-gray-700;
+}
+
+/* Custom social icons */
+.social-icon {
+    @apply text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors duration-300;
+}
