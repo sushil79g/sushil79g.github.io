@@ -75,7 +75,7 @@ This website is designed to be hosted on GitHub Pages. Simply push your changes 
 - Email: contact@aiwithsushil.com
 - LinkedIn: [sushil-ghimire-92092011b](https://linkedin.com/in/sushil-ghimire-92092011b/)
 - GitHub: [sushil79g](https://github.com/sushil79g)
-- Website: [aiwithsushil.com.au](http://aiwithsushil.com.au/)
+- Website: [aiwithsushil.com](https://www.aiwithsushil.com/)
 
 ## License
 
